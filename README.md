@@ -15,6 +15,21 @@ This is a FastAPI app that uses OpenRouter.ai to generate AI-powered chatbot res
 - [Uvicorn](https://www.uvicorn.org/) - A lightning-fast ASGI server for Python.
 - [UV](https://github.com/astral-sh/uv) - An extremely fast Python package and project manager, written in Rust.
 
+
+## Running the FastAPI app
+We are using `uv` for the Python environment and uvicorn to run the FastAPI app. You can run the app using the following command:  
+
+
+
+
+```bash
+# install dependencies
+uv sync
+# run the FastAPI app
+uv run uvicorn main:app --reload
+```
+
+
 ## OPEN ROUTER AI
 
 OpenRouter.ai is a free, open-source, and easy-to-use API that allows you to easily integrate AI-powered chatbots into your website. With OpenRouter.ai, you can create a chatbot that can answer questions, provide information, and even generate text based on user input. You can use OpenRouter.ai to create chatbots for your website, social media platforms, or any other application that requires AI-powered conversation.
