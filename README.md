@@ -6,6 +6,15 @@ This is a FastAPI app that uses OpenRouter.ai to generate AI-powered chatbot res
 
 ![Flowchart of the FastAPI app](./readme_docs/flowchart.png)
 
+## Technologies Used
+
+- [FastAPI](https://fastapi.tiangolo.com/) - A modern, fast (high-performance), web framework for building APIs with Python 3.7+ based on standard Python type hints.
+- [Google generative AI](https://ai.googleblog.com/2022/04/announcing-generative-ai-with.html) - A new generation of AI that can generate human-like text, images, and even videos.
+- [OpenRouter.ai](https://openrouter.ai/) - A free, open-source, and easy-to-use API that allows you to easily integrate AI-powered chatbots into your website.
+- [Pydantic](https://pydantic-docs.helpmanual.io/) - A data modeling library that allows you to define data models using Python type hints.
+- [Uvicorn](https://www.uvicorn.org/) - A lightning-fast ASGI server for Python.
+- [UV](https://github.com/astral-sh/uv) - An extremely fast Python package and project manager, written in Rust.
+
 ## OPEN ROUTER AI
 
 OpenRouter.ai is a free, open-source, and easy-to-use API that allows you to easily integrate AI-powered chatbots into your website. With OpenRouter.ai, you can create a chatbot that can answer questions, provide information, and even generate text based on user input. You can use OpenRouter.ai to create chatbots for your website, social media platforms, or any other application that requires AI-powered conversation.
