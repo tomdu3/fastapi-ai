@@ -14,6 +14,7 @@ This is a FastAPI app that uses OpenRouter.ai to generate AI-powered chatbot res
 - [Pydantic](https://pydantic-docs.helpmanual.io/) - A data modeling library that allows you to define data models using Python type hints.
 - [Uvicorn](https://www.uvicorn.org/) - A lightning-fast ASGI server for Python.
 - [UV](https://github.com/astral-sh/uv) - An extremely fast Python package and project manager, written in Rust.
+- [JWT](https://jwt.io/) - A compact, URL-safe means of representing claims to be transferred between two parties. The claims in a JWT are encoded as a JSON object that is digitally signed using JSON Web Signature (JWS).
 
 
 ## Running the FastAPI app
@@ -93,3 +94,8 @@ response = requests.post(
   })
 )
 ```
+
+## JWT Authentication
+JWT (JSON Web Token) is a compact, URL-safe means of representing claims to be transferred between two parties. The claims in a JWT are encoded as a JSON object that is digitally signed using JSON Web Signature (JWS). This allows you to verify the authenticity of the token and ensure that it has not been tampered with.
+
+![JWT Authentication Flow](https://jwt.io/images/tablet.en.dark.auth0-flow.svg)

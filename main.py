@@ -1,9 +1,10 @@
 import os
-from fastapi import FastAPI
+from fastapi import Depends, FastAPI
 from models import ChatRequest, ChatResponse
 from ai.gemini import Gemini
 from dotenv import load_dotenv
 from auth.throttling import apply_rate_limit
+from auth.dependencies import get_user_identifier
 
 # Load environment variables from .env file
 load_dotenv()
@@ -37,8 +38,9 @@ async def read_root():
 
 
 @app.post("/chat", response_model=ChatResponse)
-async def chat(request: ChatRequest):
-    apply_rate_limit("global_unauthenticated_user")
+async def chat(request: ChatRequest, user_id: str = Depends(get_user_identifier)):
+    # Apply rate limiting
+    apply_rate_limit(user_id=user_id)
     response_text = ai_platform.chat(request.prompt)
     if not response_text:
         response_text = "No response generated."
