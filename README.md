@@ -1,3 +1,11 @@
+# FastAPI-AI
+
+This is a FastAPI app that uses OpenRouter.ai to generate AI-powered chatbot responses.
+
+## Flowchart of the FastAPI app
+
+![Flowchart of the FastAPI app](./readme_docs/flowchart.png)
+
 ## OPEN ROUTER AI
 
 OpenRouter.ai is a free, open-source, and easy-to-use API that allows you to easily integrate AI-powered chatbots into your website. With OpenRouter.ai, you can create a chatbot that can answer questions, provide information, and even generate text based on user input. You can use OpenRouter.ai to create chatbots for your website, social media platforms, or any other application that requires AI-powered conversation.
