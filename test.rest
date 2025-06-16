@@ -1,0 +1,28 @@
+# post chat with jwt
+POST http://localhost:8000/chat
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJqb2hubnkiLCJuYW1lIjoiSm9obiBEb2UiLCJpYXQiOjE1MTYyMzkwMjJ9.x0CYZP4dfcHxf20GjVAF9bKIQ8q0h8ci4rS4lGbA8hM
+
+{
+  "prompt": "What is the meaning of life?"
+}
+###
+
+# post chat with other jwt
+POST http://localhost:8000/chat
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZXN0X3VzZXIiLCJuYW1lIjoiSGVyZSBJIEFtIiwiaWF0IjoxNTE2MjM5MDIyfQ.DzDbrADAa3Dg71pjcOypE7WRRX36mx-9cwQ8nHT_j9s
+
+{
+  "prompt": "What is the meaning of life?"
+}
+
+###
+
+# post chat without jwt token
+POST http://localhost:8000/chat
+Content-Type: application/json
+
+{
+  "prompt": "What is the meaning of life?"
+}
