@@ -1,6 +1,9 @@
-def main():
-    print("Hello from fastapi-ai!")
+import os
+from fastapi import FastAPI
+from models import ChatRequest, ChatResponse
 
+app = FastAPI()
 
-if __name__ == "__main__":
-    main()
+@app.get("/")
+def read_root():
+    return {"message": "Api is running"}
